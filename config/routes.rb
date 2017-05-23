@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'access/index'
-
   get 'admin', :to => "access#index"
 
   root "demo#index"
