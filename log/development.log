@@ -2318,3 +2318,192 @@ Processing by AccessController#index as HTML
 Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /Users/shresthasudhir/Desktop/RORGIT/simple_cms/config/routes.rb:13)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /Users/shresthasudhir/Desktop/RORGIT/simple_cms/config/routes.rb:13)
+Started GET "/" for ::1 at 2017-05-22 21:30:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb within layouts/application
+  Rendered demo/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 301ms (Views: 284.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2017-05-22 21:30:50 -0500
+Processing by AccessController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2017-05-22 21:30:50 -0500
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.6ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2017-05-22 21:31:00 -0500
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.5ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2017-05-22 21:31:12 -0500
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTGlWA1p3ndJqs+StWx1lFUekdtntOU8OJ8jgeyK19bkviW5UCZ42Og7kcxvw7w4CD5GOHRcuBi5WWtG+RAYug==", "username"=>"m_sudhir", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'm_sudhir' ORDER BY `admin_users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/access/index
+Completed 302 Found in 133ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/access/index" for ::1 at 2017-05-22 21:31:12 -0500
+Processing by AccessController#index as HTML
+  Rendering access/index.html.erb within layouts/admin
+  Rendered access/index.html.erb within layouts/admin (1.4ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/access/" for ::1 at 2017-05-22 21:58:23 -0500
+Processing by AccessController#index as HTML
+  Rendering access/index.html.erb within layouts/admin
+  Rendered access/index.html.erb within layouts/admin (1.2ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/access/logout" for ::1 at 2017-05-22 22:03:57 -0500
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /Users/shresthasudhir/Desktop/RORGIT/simple_cms/config/routes.rb:13)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /Users/shresthasudhir/Desktop/RORGIT/simple_cms/config/routes.rb:13)
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2017-05-22 22:04:07 -0500
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.6ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2017-05-22 22:04:16 -0500
+Processing by SubjectsController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2017-05-22 22:04:16 -0500
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.3ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2017-05-22 22:04:27 -0500
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XNkVDCN/hnHDbkMFTI3NWz4dO7tlVfZ4YwR7/QOxUZcZVpXtfjAg3mL/HVuWIgT3Yz3sWHa9q1ziwjM6Fiue+w==", "username"=>"m_sudhir", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'm_sudhir' ORDER BY `admin_users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/access/index
+Completed 302 Found in 116ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/access/index" for ::1 at 2017-05-22 22:04:27 -0500
+Processing by AccessController#index as HTML
+  Rendering access/index.html.erb within layouts/admin
+  Rendered access/index.html.erb within layouts/admin (1.3ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2017-05-22 22:04:28 -0500
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/admin
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `subjects`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 5[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 4[0m
+  Rendered subjects/index.html.erb within layouts/admin (65.4ms)
+Completed 200 OK in 91ms (Views: 78.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/pages" for ::1 at 2017-05-22 22:04:33 -0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/admin
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT `pages`.* FROM `pages` ORDER BY pages.position ASC[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3[0m
+  Rendered pages/index.html.erb within layouts/admin (29.6ms)
+Completed 200 OK in 49ms (Views: 42.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sections" for ::1 at 2017-05-22 22:04:36 -0500
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/admin
+  [1m[36mSection Load (0.8ms)[0m  [1m[34mSELECT `sections`.* FROM `sections` ORDER BY sections.position ASC[0m
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+  Rendered sections/index.html.erb within layouts/admin (21.4ms)
+Completed 200 OK in 41ms (Views: 32.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/sections" for ::1 at 2017-05-22 22:04:42 -0500
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/admin
+  [1m[36mSection Load (0.4ms)[0m  [1m[34mSELECT `sections`.* FROM `sections` ORDER BY sections.position ASC[0m
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT  `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+  Rendered sections/index.html.erb within layouts/admin (8.2ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/access/logout" for ::1 at 2017-05-22 22:04:44 -0500
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2017-05-22 22:04:44 -0500
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.2ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/access/attempt_login" for ::1 at 2017-05-22 22:05:16 -0500
+Processing by AccessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"goRDKSbXYYDJGSPR+aTb3iGg9KGW/sn90lMMsS9ChvnHC8PIe5jHL2iIfY8jCxJyfIAjQoUWlNlTlUR2OthJlQ==", "username"=>"m_sudhir", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'm_sudhir' ORDER BY `admin_users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/access/index
+Completed 302 Found in 95ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/access/index" for ::1 at 2017-05-22 22:05:16 -0500
+Processing by AccessController#index as HTML
+  Rendering access/index.html.erb within layouts/admin
+  Rendered access/index.html.erb within layouts/admin (2.2ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for ::1 at 2017-05-22 22:05:18 -0500
+Processing by SubjectsController#index as HTML
+  Rendering subjects/index.html.erb within layouts/admin
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `subjects`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 6[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 5[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 4[0m
+  Rendered subjects/index.html.erb within layouts/admin (25.5ms)
+Completed 200 OK in 46ms (Views: 40.3ms | ActiveRecord: 3.4ms)
+
+
